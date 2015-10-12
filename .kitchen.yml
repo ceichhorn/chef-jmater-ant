@@ -12,5 +12,5 @@ platforms:
 suites:
   - name: default
     run_list:
-     - recipe[jmeter::default]
+     - recipe[jmeter-ant::default]
     attributes:

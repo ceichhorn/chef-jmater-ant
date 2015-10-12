@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'fauxhai'
 
 
-describe 'jmeter' do
+describe 'jmeter-ant' do
   let(:chef_run) do
     ChefSpec::SoloRunner.new do |node|
       node.set['opsmatic']['integration_token'] = 'SomeToken'
@@ -14,7 +14,7 @@ describe 'jmeter' do
   end
 
  it 'includes the `jmeter` recipe' do
-    expect(chef_run).to include_recipe('jmeter')
+    expect(chef_run).to include_recipe('jmeter-ant')
   end
 
   it 'creates templates directory' do

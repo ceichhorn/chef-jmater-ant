@@ -1,4 +1,4 @@
-name 'jmeter'
+name 'jmeter-ant'
 maintainer 'Carl Eichhorn'
 maintainer_email 'ceichhorn@gannett.com'
 license 'Apache 2.0'
