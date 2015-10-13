@@ -1,7 +1,7 @@
 jmeter-cookbook
 ===============
 
-Configures a system for load-testing by installing Apache Jmeter and Ant
+Configures a system for load-testing by installing Apache Jmeter
 
 # Requirements
 There is a requirement of Java for this package to install.

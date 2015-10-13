@@ -27,7 +27,7 @@ Style/HashSyntax:
 Style/NumericLiterals:
   MinDigits: 6
 
-# TODO: see if this should be replaced by Chef::Application.fatal!
+#  see if this should be replaced by Chef::Application.fatal!
 Style/SignalException:
   Enabled: false
 
