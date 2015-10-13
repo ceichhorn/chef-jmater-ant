@@ -1,9 +1,11 @@
 #
-# Cookbook: jmeter-ant
+# Cookbook: jmeter
 # License: Apache 2.0
 #
 # Copyright (C) 2015 Gannett Co.
 #
+
+include_recipe 'java::default'
 
 directory node['jmeter']['plan_dir'] do
   recursive true
@@ -18,13 +20,3 @@ ark 'jmeter' do
   version node['jmeter']['version']
   only_if { node['jmeter']['install_type'] == 'source' }
 end
-
-ant_pkgs = [node['ant']['packages']]
-
-ant_pkgs.each do |pkg|
-  package pkg do
-    action :install
-  end
-end
-
-include_recipe 'java::default'

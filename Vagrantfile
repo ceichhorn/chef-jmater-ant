@@ -15,7 +15,7 @@ Vagrant.configure(my_api) do |config|
     chef.cookbooks_path = '/Users/ceichhorn/gmtichef/cookbooks'
     chef.roles_path = '/Users/ceichhorn/gmtichef/roles'
     chef.data_bags_path = '/Users/ceichhorn/gmtichef/databags'
-    chef.add_recipe 'jmeter-ant'
+    chef.add_recipe 'jmeter'
   end
 
   config.vm.provider 'virtualbox' do |vb|
